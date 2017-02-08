@@ -4,9 +4,35 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+@import 'reset';
 
-$c-warning: #f00;
+$b-color: #ddd;
 
-body {
-  background: $c-warning;
+.banner {
+  background-image: url('/img/53803070_l.jpg');
+  background-size: cover;
+  color: $b-color;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__group-left {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__group-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__group {
+  padding: 1rem;
 }
