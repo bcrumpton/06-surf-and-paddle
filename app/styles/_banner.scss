@@ -1,0 +1,40 @@
+// stylings for the navigation/banner element
+
+$b-color: #ddd;
+$c-bckgrnd1: rgba(28, 28, 28, 0.7);
+$c-bckgrnd2: rgba(217, 217, 217, 0.7);
+
+
+.banner {
+  background: linear-gradient($c-bckgrnd1, $c-bckgrnd2), url('/img/53803070_l.jpg');
+  background-size: cover;
+  color: $b-color;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav__group-left {
+  display: flex;
+  justify-content: space-around;
+
+  > * {
+    margin-left: 1rem;
+  }
+}
+
+.nav__group-right {
+  display: flex;
+  justify-content: space-around;
+
+  &--item {
+    margin-right: 1rem;
+  }
+}

@@ -5,34 +5,20 @@
 // @import 'font-awesome';
 @import 'box-sizing';
 @import 'reset';
+@import 'banner';
 
-$b-color: #ddd;
+$c-subtitle: #242424;
 
-.banner {
-  background-image: url('/img/53803070_l.jpg');
-  background-size: cover;
-  color: $b-color;
-}
+.banner__main {
+  padding: 4rem 2rem;
+  text-align: center;
 
-.logo {
-  height: 4rem;
-}
+  &--title {
+    font-size: 6rem;
+    font-weight: 300;
+  }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav__group-left {
-  display: flex;
-  justify-content: space-around;
-}
-
-.nav__group-right {
-  display: flex;
-  justify-content: space-around;
-}
-
-.nav__group {
-  padding: 1rem;
+  &--subtitle {
+    color: $c-subtitle;
+  }
 }
