@@ -1,0 +1,74 @@
+// styles for sidebar element and nested elements
+
+$c-gray: #808080;
+
+.side-column {
+  display: flex;
+  flex-basis: calc(35%);
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__avatar {
+    display: flex;
+    justify-content: flex-end;
+    border: 0.2rem solid $c-secondary;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin: 1rem;
+    text-align: center;
+  }
+
+  &__social {
+    margin: 0.3rem;
+    color: $c-secondary;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.bio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__link {
+    margin: 0.2rem;
+    text-align: right;
+
+
+    a {
+      color: $c-gray;
+      text-decoration: none;
+    }
+  }
+
+  &__pic {
+    max-width: 400px;
+    height: 20%;
+    max-height: 300px;
+    margin-top: 1.5rem;
+    border-radius: 0.2rem;
+    background: linear-gradient($c-bckgrnd1, $c-bckgrnd2), url('www.placecera.com/c/300/400');
+  }
+
+  &__heading {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+
+  }
+
+  &__paragraph {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+  }
+}

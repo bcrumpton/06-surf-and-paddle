@@ -1,5 +1,7 @@
 // sass stylings for the main article
 
+$c-secondary: rgb(24, 207, 199);
+
 .article {
   display: flex;
   flex-basis: calc(65%);
@@ -22,11 +24,11 @@
   &__date-and-time {
     display: flex;
     align-items: center;
+    color: $c-secondary;
   }
 
   &-name {
     margin-left: 1rem;
-    color: $c-bckgrnd1;
   }
 
   &-content {
