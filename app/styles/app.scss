@@ -18,3 +18,22 @@
   max-width: 65rem;
   margin: 0 auto;
 }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+
+.grid {
+  width: calc(100% / 4 - 1rem - 1rem);
+
+}
