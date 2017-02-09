@@ -6,19 +6,78 @@
 @import 'box-sizing';
 @import 'reset';
 @import 'banner';
+@import 'article';
 
-$c-subtitle: #242424;
+$c-gray: #808080;
 
-.banner__main {
-  padding: 4rem 2rem;
-  text-align: center;
+.main-content {
+  display: flex;
+}
 
-  &--title {
-    font-size: 6rem;
-    font-weight: 300;
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.side-column {
+  display: flex;
+  flex-basis: calc(35%);
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__avatar {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 50%;
   }
 
-  &--subtitle {
-    color: $c-subtitle;
+  &__name {
+    margin: 1rem;
+    text-align: center;
+  }
+
+  &__social {
+    margin: 0.3rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.bio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__link {
+    margin: 0.2rem;
+    text-align: right;
+
+
+    a {
+      color: $c-gray;
+      text-decoration: none;
+    }
+  }
+
+  &__pic {
+    margin-top: 3rem;
+  }
+
+  &__heading {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__paragraph {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
   }
 }

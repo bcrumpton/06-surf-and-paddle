@@ -1,14 +1,17 @@
 // stylings for the navigation/banner element
 
 $b-color: #ddd;
-$c-bckgrnd1: rgba(28, 28, 28, 0.7);
-$c-bckgrnd2: rgba(217, 217, 217, 0.7);
-
+$c-bckgrnd1: rgba(28, 28, 28, 0.8);
+$c-bckgrnd2: rgba(237, 237, 237, 0.8);
+$c-subtitle: rgb(28, 28, 28);
 
 .banner {
   background: linear-gradient($c-bckgrnd1, $c-bckgrnd2), url('/img/53803070_l.jpg');
+  background-attachment: fixed;
   background-size: cover;
   color: $b-color;
+
+
 }
 
 .logo {
@@ -30,11 +33,30 @@ $c-bckgrnd2: rgba(217, 217, 217, 0.7);
   }
 }
 
+.fa-search {
+  margin-left: 0.2rem;
+}
+
 .nav__group-right {
   display: flex;
   justify-content: space-around;
 
   &--item {
     margin-right: 1rem;
+  }
+}
+
+.banner__main {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  &--title {
+    font-size: 6rem;
+    font-weight: 300;
+    text-shadow: 0.2rem 0.2rem 0.5rem $c-bckgrnd1;
+  }
+
+  &--subtitle {
+    color: $c-subtitle;
   }
 }
