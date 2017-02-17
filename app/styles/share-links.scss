@@ -1,0 +1,41 @@
+// stylings for social links
+
+$c-share-background: #106db3;
+$c-share-icon: #083452;
+$c-btn-background: #a3b3bf;
+$c-icon-btn-background: #5e686f;
+$c-white: #fff;
+
+.links-group {
+  display: flex;
+
+  &__item {
+    margin-right: 1rem;
+    padding-right: 0.5rem;
+    background: $c-btn-background;
+    color: $c-white;
+    font-size: 0.8rem;
+    text-decoration: none;
+
+    &--icon {
+      margin-right: 0.3rem;
+      padding: 0.5rem;
+      background: $c-icon-btn-background;
+    }
+  }
+}
+
+.share-button {
+  margin-right: 1rem;
+  padding-right: 0.5rem;
+  background: $c-share-background;
+  color: $c-white;
+  font-size: 0.8rem;
+  text-decoration: none;
+
+  &__icon {
+    margin-right: 0.3rem;
+    padding: 0.5rem;
+    background: $c-share-icon;
+  }
+}
