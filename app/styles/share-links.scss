@@ -8,13 +8,13 @@ $c-white: #fff;
 
 .links-group {
   display: flex;
+  flex-wrap: wrap;
 
   &__item {
-    margin-right: 1rem;
+    margin: 0.5rem 1rem;
     padding-right: 0.5rem;
     background: $c-btn-background;
     color: $c-white;
-    font-size: 0.8rem;
     text-decoration: none;
 
     &--icon {
@@ -26,11 +26,10 @@ $c-white: #fff;
 }
 
 .share-button {
-  margin-right: 1rem;
+  margin: 0.5rem 1rem;
   padding-right: 0.5rem;
   background: $c-share-background;
   color: $c-white;
-  font-size: 0.8rem;
   text-decoration: none;
 
   &__icon {

@@ -5,6 +5,9 @@ $c-footer: rgb(33, 49, 56);
 
 .main-content {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container {
@@ -34,6 +37,7 @@ $c-footer: rgb(33, 49, 56);
   &__item {
     flex-grow: 1;
     width: calc(100% / 4 - 1rem);
+    min-width: 15rem;
   }
 }
 
@@ -43,6 +47,7 @@ $c-footer: rgb(33, 49, 56);
   padding: 1rem;
   background: $c-footer;
   color: $c-bckgrnd2;
+  flex-wrap: wrap;
 
   &__left {
     display: flex;

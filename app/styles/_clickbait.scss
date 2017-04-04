@@ -6,6 +6,7 @@ $c-overlay2: rgba(28, 28, 28, 0.7);
 $c-filter: linear-gradient($c-bckgrnd1, $c-overlay1);
 
 .clickbait {
+  display: flex;
   position: relative;
 
   &__title {
@@ -15,7 +16,6 @@ $c-filter: linear-gradient($c-bckgrnd1, $c-overlay1);
     left: 0.2rem;
     margin: 0;
     color: $c-bckgrnd2;
-    font-size: 3rem;
   }
 
   &__overlay {

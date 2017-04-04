@@ -22,6 +22,7 @@ $c-subtitle: rgb(28, 28, 28);
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem;
 }
@@ -41,7 +42,7 @@ $c-subtitle: rgb(28, 28, 28);
 
 .nav__group-right {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 
   &--item {
     margin-right: 1rem;
@@ -50,10 +51,12 @@ $c-subtitle: rgb(28, 28, 28);
 
 .banner__main {
   padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-
   &--title {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 300;
     text-shadow: 0.2rem 0.2rem 0.5rem $c-bckgrnd1;
   }

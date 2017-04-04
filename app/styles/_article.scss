@@ -4,9 +4,9 @@ $c-secondary: rgb(24, 207, 199);
 
 .article {
   display: flex;
-  flex-basis: calc(65%);
+  flex-basis: calc(65% - 2rem);
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin: 1rem;
   padding: 1rem;
 
@@ -37,4 +37,9 @@ $c-secondary: rgb(24, 207, 199);
     font-size: 1rem;
     font-weight: 100;
   }
+}
+
+.featured {
+  padding: 1rem 0 1rem 1rem;
+  border-left: 0.3rem solid $c-secondary;
 }
