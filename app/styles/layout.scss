@@ -8,6 +8,7 @@ $c-footer: rgb(33, 49, 56);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 (-1rem);
 }
 
 .container {
@@ -42,12 +43,14 @@ $c-footer: rgb(33, 49, 56);
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around;
   padding: 1rem;
   background: $c-footer;
   color: $c-bckgrnd2;
-  flex-wrap: wrap;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__left {
     display: flex;
