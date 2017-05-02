@@ -1,0 +1,45 @@
+// sass stylings for the main article
+
+$c-secondary: rgb(24, 207, 199);
+
+.article {
+  display: flex;
+  flex-basis: calc(65% - 2rem);
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1rem;
+  padding: 1rem;
+
+
+  &-heading {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  &__avatar {
+    height: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+  }
+
+  &__date-and-time {
+    display: flex;
+    align-items: center;
+    color: $c-secondary;
+  }
+
+  &-name {
+    margin-left: 1rem;
+  }
+
+  &-content {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+}
+
+.featured {
+  padding: 1rem 0 1rem 1rem;
+  border-left: 0.3rem solid $c-secondary;
+}

@@ -1,0 +1,83 @@
+// styles for the layout
+
+$c-footer: rgb(33, 49, 56);
+
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 (-1rem);
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+
+  &__item {
+    flex-grow: 1;
+    width: calc(100% / 4 - 1rem);
+    min-width: 15rem;
+  }
+}
+
+.footer {
+  padding: 1rem;
+  background: $c-footer;
+  color: $c-bckgrnd2;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 5rem;
+    margin-right: 1rem;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navlist {
+    display: flex;
+  }
+
+  &__navlist--item {
+    margin-left: 1rem;
+
+
+    > * + * {
+      border-left: 1rem solid $c-bckgrnd2;
+    }
+  }
+
+}

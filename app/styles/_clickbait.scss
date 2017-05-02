@@ -1,0 +1,33 @@
+// styles for the clickbait section
+
+$c-overlay1: rgba(24, 207, 199, 0.7);
+$c-overlay2: rgba(28, 28, 28, 0.7);
+
+$c-filter: linear-gradient($c-bckgrnd1, $c-overlay1);
+
+.clickbait {
+  display: flex;
+  position: relative;
+
+  &__title {
+    display: flex;
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0.2rem;
+    margin: 0;
+    color: $c-bckgrnd2;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $c-overlay1;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
